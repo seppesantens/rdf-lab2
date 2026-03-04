@@ -1,0 +1,3 @@
+@prefix lab: <https://seppesantens.github.io/rdf-lab2/vocab.ttl#> .
+
+<https://seppesantens.github.io/rdf-lab2/data.ttl#me> a lab:Person .
