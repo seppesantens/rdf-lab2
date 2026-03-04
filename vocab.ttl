@@ -4,4 +4,54 @@
 
 lab:Person a rdfs:Class ;
     rdfs:label "Person" ;
-    rdfs:comment "A Person, dead or alive, fictional or real." .
+    rdfs:comment "A person, dead or alive." .
+
+lab:Organization a rdfs:Class ;
+    rdfs:label "Organization" ;
+    rdfs:comment "An organization, profit or non-profit." .
+
+lab:Course a rdfs:Class ;
+    rdfs:label "Course" ;
+    rdfs:comment "A course offered at an educational institution." .
+
+lab:name a rdf:Property ;
+    rdfs:label "name" ;
+    rdfs:comment "The name of a resource" ;
+    rdfs:domain rdfs:Resource ;
+    rdfs:range rdfs:Literal .
+
+lab:birthDate a rdf:Property ;
+    rdfs:label "birth date" ;
+    rdfs:comment "Date of birth." ;
+    rdfs:domain lab:Person ;
+    rdfs:range rdfs:Literal .
+
+lab:worksFor a rdf:Property ;
+    rdfs:label "works for" ;
+    rdfs:comment "Relates a person to the organization they work for." ;
+    rdfs:domain lab:Person ;
+    rdfs:range lab:Organization .
+
+lab:hasInterest a rdf:Property ;
+    rdfs:label "has interest" ;
+    rdfs:comment "Indicates a topic or activity that this person is interested in." ;
+    rdfs:domain lab:Person ;
+    rdfs:range rdfs:Resource .
+
+lab:enrolledIn a rdf:Property ;
+    rdfs:label "enrolled in" ;
+    rdfs:comment "Relates a person to a course they are enrolled in." ;
+    rdfs:domain lab:Person ;
+    rdfs:range lab:Course .
+
+lab:seeAlso a rdf:Property ;
+    rdfs:label "see also" ;
+    rdfs:comment "Relates a resource to another resource that describes the same thing." ;
+    rdfs:domain rdfs:Resource ;
+    rdfs:range rdfs:Resource .
+
+lab:knows a rdf:Property ;
+    rdfs:label "knows" ;
+    rdfs:comment "Indicates that this person knows another person." ;
+    rdfs:domain lab:Person ;
+    rdfs:range lab:Person .
