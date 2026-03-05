@@ -2,22 +2,26 @@
 @prefix wd: <https://www.wikidata.org/entity/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://seppesantens.github.io/rdf-lab2/data.ttl#me> a lab:Person ;
+@prefix : <https://seppesantens.github.io/rdf-lab2/data.ttl#> .
+
+:me a lab:Person ;
     lab:name "Seppe Santens" ;
     lab:birthDate "1983-01-26"^^xsd:date ;
-    lab:worksFor <https://seppesantens.github.io/rdf-lab2/data.ttl#Westtoer> ;
+    lab:worksFor :Westtoer ;
     lab:hasInterest wd:Q936, wd:Q54872 ;
-    lab:enrolledIn <https://seppesantens.github.io/rdf-lab2/data.ttl#knowledge-graphs-2025> ;
+    lab:enrolledIn :knowledge-graphs-2025 ;
     lab:seeAlso wd:Q76645490, <https://www.openstreetmap.org/user/L%27imaginaire/> ;
-    lab:knows <https://www.tabulas.eu/ward>, <https://tdhulster.github.io/knowledge-graphs-ugent-2026/profile.ttl#me> .
+    lab:knows <https://www.tabulas.eu/ward>, <https://tdhulster.github.io/knowledge-graphs-ugent-2026/profile.ttl#me>, <https://tiantangvanhoecke.github.io/KG_Lab2/data.ttl#me> .
 
-<https://seppesantens.github.io/rdf-lab2/data.ttl#Westtoer> a lab:Organization;
+:Westtoer a lab:Organization;
     lab:name "Westtoer" .
 
-<https://seppesantens.github.io/rdf-lab2/data.ttl#knowledge-graphs-2025> a lab:Course ;
+:knowledge-graphs-2025 a lab:Course ;
     lab:name "Knowledge Graphs 2025" ;
     lab:seeAlso <https://studiekiezer.ugent.be/studiefiche/nl/E018160/2025> .
 
 <https://www.tabulas.eu/ward> a lab:Person.
 
 <https://tdhulster.github.io/knowledge-graphs-ugent-2026/profile.ttl#me> a lab:Person.
+
+<https://tiantangvanhoecke.github.io/KG_Lab2/data.ttl#me> a lab:Person.
