@@ -11,7 +11,12 @@
     lab:hasInterest wd:Q936, wd:Q54872 ;
     lab:enrolledIn :knowledge-graphs-2025 ;
     lab:seeAlso wd:Q76645490, <https://www.openstreetmap.org/user/L%27imaginaire/> ;
-    lab:knows <https://www.tabulas.eu/ward>, <https://tdhulster.github.io/knowledge-graphs-ugent-2026/profile.ttl#me>, <https://tiantangvanhoecke.github.io/KG_Lab2/data.ttl#me> .
+    lab:knows 
+        <https://www.tabulas.eu/ward>, 
+        <https://tdhulster.github.io/knowledge-graphs-ugent-2026/profile.ttl#me>, 
+        <https://tiantangvanhoecke.github.io/KG_Lab2/data.ttl#me>,
+        <https://janaverl.github.io/knowledge_graphs_lab2/0001.ttl#me>,
+        <https://hannevanoutrive.github.io/knowledge_graphs/data.ttl#vanoutrive_hanne> .
 
 :Westtoer a lab:Organization;
     lab:name "Westtoer" .
@@ -21,7 +26,7 @@
     lab:seeAlso <https://studiekiezer.ugent.be/studiefiche/nl/E018160/2025> .
 
 <https://www.tabulas.eu/ward> a lab:Person.
-
 <https://tdhulster.github.io/knowledge-graphs-ugent-2026/profile.ttl#me> a lab:Person.
-
 <https://tiantangvanhoecke.github.io/KG_Lab2/data.ttl#me> a lab:Person.
+<https://janaverl.github.io/knowledge_graphs_lab2/0001.ttl#me> a lab:Person.
+<https://hannevanoutrive.github.io/knowledge_graphs/data.ttl#vanoutrive_hanne> a lab:Person.
