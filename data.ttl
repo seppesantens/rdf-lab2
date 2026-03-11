@@ -27,8 +27,13 @@
     lab:name "Knowledge Graphs 2025" ;
     lab:seeAlso <https://studiekiezer.ugent.be/studiefiche/nl/E018160/2025> .
 
-<https://www.tabulas.eu/ward> a lab:Person.
-<https://tdhulster.github.io/knowledge-graphs-ugent-2026/profile.ttl#me> a lab:Person.
-<https://tiantangvanhoecke.github.io/KG_Lab2/data.ttl#me> a lab:Person.
-<https://janaverl.github.io/knowledge_graphs_lab2/0001.ttl#me> a lab:Person.
-<https://hannevanoutrive.github.io/knowledge_graphs/data.ttl#vanoutrive_hanne> a lab:Person.
+<https://www.tabulas.eu/ward> a lab:Person;
+    lab:enrolledIn :knowledge-graphs-2025 .
+<https://tdhulster.github.io/knowledge-graphs-ugent-2026/profile.ttl#me> a lab:Person;
+    lab:enrolledIn :knowledge-graphs-2025 .
+<https://tiantangvanhoecke.github.io/KG_Lab2/data.ttl#me> a lab:Person;
+    lab:enrolledIn :knowledge-graphs-2025 .
+<https://janaverl.github.io/knowledge_graphs_lab2/0001.ttl#me> a lab:Person;
+    lab:enrolledIn :knowledge-graphs-2025 .
+<https://hannevanoutrive.github.io/knowledge_graphs/data.ttl#vanoutrive_hanne> a lab:Person;
+    lab:enrolledIn :knowledge-graphs-2025 .
