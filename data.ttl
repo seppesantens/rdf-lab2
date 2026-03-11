@@ -6,6 +6,7 @@
 
 :me a lab:Person ;
     lab:name "Seppe Santens" ;
+    schema:name "Seppe Santens" ;
     lab:birthDate "1983-01-26"^^xsd:date ;
     lab:worksFor :Westtoer ;
     lab:hasInterest wd:Q936, wd:Q54872 ;
