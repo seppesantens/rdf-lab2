@@ -1,5 +1,5 @@
 @prefix lab: <https://seppesantens.github.io/rdf-lab2/vocab.ttl#> .
-@prefix wd: <https://www.wikidata.org/entity/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
 @prefix schema: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
