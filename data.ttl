@@ -20,12 +20,8 @@
         <https://janaverl.github.io/knowledge_graphs_lab2/0001.ttl#me>,
         <https://hannevanoutrive.github.io/knowledge_graphs/data.ttl#vanoutrive_hanne> .
 
-:Westtoer a lab:Organization;
-    lab:name "Westtoer" .
-
-:knowledge-graphs-2025 a lab:Course ;
-    lab:name "Knowledge Graphs 2025" ;
-    lab:seeAlso <https://studiekiezer.ugent.be/studiefiche/nl/E018160/2025> .
+:TimBernersLee a lab:Person ;
+    lab:name "Tim Berners-Lee" .
 
 <https://www.tabulas.eu/ward> a lab:Person;
     lab:enrolledIn :knowledge-graphs-2025 .
@@ -37,3 +33,32 @@
     lab:enrolledIn :knowledge-graphs-2025 .
 <https://hannevanoutrive.github.io/knowledge_graphs/data.ttl#vanoutrive_hanne> a lab:Person;
     lab:enrolledIn :knowledge-graphs-2025 .
+
+:Westtoer a lab:Organization;
+    lab:name "Westtoer" .
+
+:knowledge-graphs-2025 a lab:Course ;
+    lab:name "Knowledge Graphs 2025" ;
+    lab:seeAlso <https://studiekiezer.ugent.be/studiefiche/nl/E018160/2025> .
+
+:Bruges a lab:Place ;
+    lab:name "Bruges" .
+
+:London a lab:Place ;
+    lab:name "London" .
+
+:photo-me a lab:Photograph ;
+    lab:title "Seppe Santens at Westtoer" ;
+    lab:creator "Carlo Verfaille" ;
+    lab:depicts :me ;
+    lab:placeTaken :Bruges ;
+    lab:description "A portrait photograph of Seppe Santens taken at the Westtoer offices in Bruges." ;
+    lab:imageUrl <https://cms.westtoer.be/sites/default/files/styles/original_xl/public/2022-11/SSN_2021.jpg> .
+
+:photo-TimBernersLee a lab:Photograph ;
+    lab:title "Sir Tim Berners-Lee" ;
+    lab:creator "Paul Clarke" ;
+    lab:depicts :TimBernersLee ;
+    lab:placeTaken :London ;
+    lab:description "Sir Tim arriving at the Guildhall to receive the Honorary Freedom of the City of London." ;
+    lab:imageUrl <https://upload.wikimedia.org/wikipedia/commons/9/9d/Sir_Tim_Berners-Lee.jpg> .

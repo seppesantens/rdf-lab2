@@ -16,6 +16,14 @@ lab:Course a rdfs:Class ;
     rdfs:label "Course" ;
     rdfs:comment "A course offered at an educational institution." .
 
+lab:Photograph a rdfs:Class ;
+    rdfs:label "Photograph" ;
+    rdfs:comment "A photograph, typically published on the web." .
+
+lab:Place a rdfs:Class ;
+    rdfs:label "Place" ;
+    rdfs:comment "A physical location where an event or activity took place." .
+
 lab:name a rdf:Property ;
     rdfs:label "name" ;
     rdfs:comment "The name of a resource" ;
@@ -58,3 +66,39 @@ lab:knows a rdf:Property ;
     rdfs:comment "Indicates that this person knows another person." ;
     rdfs:domain lab:Person ;
     rdfs:range lab:Person .
+
+lab:title a rdf:Property ;
+    rdfs:label "title" ;
+    rdfs:comment "The title of a photograph." ;
+    rdfs:domain lab:Photograph ;
+    rdfs:range rdfs:Literal .
+
+lab:creator a rdf:Property ;
+    rdfs:label "creator" ;
+    rdfs:comment "The person who took the photograph." ;
+    rdfs:domain lab:Photograph ;
+    rdfs:range rdfs:Literal .
+
+lab:depicts a rdf:Property ;
+    rdfs:label "depicts" ;
+    rdfs:comment "A person or thing shown in the photograph." ;
+    rdfs:domain lab:Photograph ;
+    rdfs:range rdfs:Resource .
+
+lab:placeTaken a rdf:Property ;
+    rdfs:label "place taken" ;
+    rdfs:comment "The place where the photograph was taken." ;
+    rdfs:domain lab:Photograph ;
+    rdfs:range lab:Place .
+
+lab:description a rdf:Property ;
+    rdfs:label "description" ;
+    rdfs:comment "A textual summary or description of the photograph." ;
+    rdfs:domain lab:Photograph ;
+    rdfs:range rdfs:Literal .
+
+lab:imageUrl a rdf:Property ;
+    rdfs:label "image URL" ;
+    rdfs:comment "A URL pointing directly to the image file of a photograph." ;
+    rdfs:domain lab:Photograph ;
+    rdfs:range rdfs:Resource .
