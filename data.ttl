@@ -12,16 +12,13 @@
     lab:worksFor :Westtoer ;
     lab:hasInterest wd:Q936, wd:Q54872 ;
     lab:enrolledIn :knowledge-graphs-2025 ;
-    lab:seeAlso wd:Q76645490, <https://www.openstreetmap.org/user/L%27imaginaire/> ;
+    lab:sameAs wd:Q76645490 ;
     lab:knows 
         <https://www.tabulas.eu/ward>, 
         <https://tdhulster.github.io/knowledge-graphs-ugent-2026/profile.ttl#me>, 
         <https://tiantangvanhoecke.github.io/KG_Lab2/data.ttl#me>,
         <https://janaverl.github.io/knowledge_graphs_lab2/0001.ttl#me>,
         <https://hannevanoutrive.github.io/knowledge_graphs/data.ttl#vanoutrive_hanne> .
-
-:TimBernersLee a lab:Person ;
-    lab:name "Tim Berners-Lee" .
 
 <https://www.tabulas.eu/ward> a lab:Person;
     lab:enrolledIn :knowledge-graphs-2025 .
@@ -34,22 +31,37 @@
 <https://hannevanoutrive.github.io/knowledge_graphs/data.ttl#vanoutrive_hanne> a lab:Person;
     lab:enrolledIn :knowledge-graphs-2025 .
 
+:TimBernersLee a lab:Person ;
+    lab:name "Tim Berners-Lee" ;
+    lab:sameAs wd:Q80 .
+
+:CarloVerfaille a lab:Person ;
+    lab:name "Carlo Verfaille" .
+
+:PaulClarke a lab:Person ;
+    lab:name "Paul Clarke" .
+
 :Westtoer a lab:Organization;
     lab:name "Westtoer" .
 
 :knowledge-graphs-2025 a lab:Course ;
-    lab:name "Knowledge Graphs 2025" ;
-    lab:seeAlso <https://studiekiezer.ugent.be/studiefiche/nl/E018160/2025> .
+    lab:name "Knowledge Graphs 2025" .
 
 :Bruges a lab:Place ;
-    lab:name "Bruges" .
+    lab:name "Bruges" ;
+    lab:sameAs wd:Q12994 .
 
 :London a lab:Place ;
-    lab:name "London" .
+    lab:name "London" ;
+    lab:sameAs wd:Q84 .
+
+:Messines a lab:Place ;
+    lab:name "Messines" ;
+    lab:sameAs wd:Q737077 .
 
 :photo-me a lab:Photograph ;
     lab:title "Seppe Santens at Westtoer" ;
-    lab:creator "Carlo Verfaille" ;
+    lab:creator :CarloVerfaille ;
     lab:depicts :me ;
     lab:placeTaken :Bruges ;
     lab:description "A portrait photograph of Seppe Santens taken at the Westtoer offices in Bruges." ;
@@ -57,8 +69,16 @@
 
 :photo-TimBernersLee a lab:Photograph ;
     lab:title "Sir Tim Berners-Lee" ;
-    lab:creator "Paul Clarke" ;
+    lab:creator :PaulClarke ;
     lab:depicts :TimBernersLee ;
     lab:placeTaken :London ;
     lab:description "Sir Tim arriving at the Guildhall to receive the Honorary Freedom of the City of London." ;
     lab:imageUrl <https://upload.wikimedia.org/wikipedia/commons/9/9d/Sir_Tim_Berners-Lee.jpg> .
+
+:photo-RoundTowerMessines a lab:Photograph ;
+    lab:title "Round Tower Messines" ;
+    lab:creator :me ;
+    lab:depicts wd:Q6083563 ;
+    lab:placeTaken :Messines ;
+    lab:description "Irish round tower in the Irish Peace Park in Messines." ;
+    lab:imageUrl <https://upload.wikimedia.org/wikipedia/commons/a/ab/Ierse_round_tower%2C_Mesen.jpg> .
